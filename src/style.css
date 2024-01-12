@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Hedar{
+    background-color: black;
+    color: white;
+    padding: 5px 0px;
+}
+.Hedar h2{
+    text-align: center;
+    color: white;
+}
+
+.Hedar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 10px; */
+    gap: 20px;
+    /* margin: auto; */
+    color: yellow;
+}
+
+.about h1{
+     text-align: center;
+     padding: 5px 0px;
+}
+.about div{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.about img{
+    width: 200px;
+    margin: 10px 0px;
+    border-radius: 50%;
+}
+.about p{
+    margin: 0px 5px;
+    text-align: justify;
+}
+.section-css{
+    margin: 10px 5px;
+}
+.section-css h3{
+    text-align: center;
+    margin: 5px 0px;
+}
+.section-css p{
+    text-align: justify;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

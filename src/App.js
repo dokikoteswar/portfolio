@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hedar from "./comp/Hedar";
+import About from "./comp/About";
+import Section from "./comp/Section"
+import data from "./data/sectionData"
+import "./style.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App =()=>{
+    return(
+       <div>
+        <Hedar />
+       <About />
+       {
+        data.map((item,i)=>(
+            <Section key={i} title={item.title} description={item.description}/>
+        ))
+       }
+       </div>
+       
+    )
 }
 
 export default App;
